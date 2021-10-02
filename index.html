@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Jungle Safari</title>
+</head>
+
+<body>
+    <header id="header">
+        <a href="" class="logo">Jungle</a>
+        <ul>
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="text"><span>It's time for a new</span><br> Adventure</h2>
+        <img src="bird1.png" alt="" id="bird1">
+        <img src="bird2.png" alt="" id="bird2">
+        <img src="forest.png" alt="" id="forest">
+        <a href="" id="btn">Explore</a>
+        <img src="rocks.png" alt="" id="rocks">
+        <img src="water.png" alt="" id="water">
+    </section>
+    <div class="sec">
+        <h2>Book your Jungle Safari now!</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti voluptas eveniet in iure dolorum
+            repellendus ipsum quasi quaerat atque, assumenda voluptatibus aliquam laudantium harum! Saepe alias
+            blanditiis dicta. A corrupti eveniet non nemo quae! Et tenetur omnis quibusdam neque dolores, consequuntur
+            fuga recusandae, rerum impedit dolorum optio repudiandae maiores, maxime perspiciatis ipsum quam alias
+            possimus perferendis at tempora ea nihil repellat aspernatur. Eum corporis ducimus ut, ex perferendis
+            doloribus laboriosam officiis possimus sequi, eveniet aperiam ratione corrupti placeat provident autem
+            voluptates reprehenderit assumenda animi. Minima aliquid, atque quas, harum nam ullam ipsum temporibus modi
+            velit, quis possimus sint eius ratione!</p>
+        <br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti voluptas eveniet in iure dolorum
+            repellendus ipsum quasi quaerat atque, assumenda voluptatibus aliquam laudantium harum! Saepe alias
+            blanditiis dicta. A corrupti eveniet non nemo quae! Et tenetur omnis quibusdam neque dolores, consequuntur
+            fuga recusandae, rerum impedit dolorum optio repudiandae maiores, maxime perspiciatis ipsum quam alias
+            possimus perferendis at tempora ea nihil repellat aspernatur. Eum corporis ducimus ut, ex perferendis
+            doloribus laboriosam officiis possimus sequi, eveniet aperiam ratione corrupti placeat provident autem
+            voluptates reprehenderit assumenda animi. Minima aliquid, atque quas, harum nam ullam ipsum temporibus modi
+            velit, quis possimus sint eius ratione!</p>
+        <br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti voluptas eveniet in iure dolorum
+            repellendus ipsum quasi quaerat atque, assumenda voluptatibus aliquam laudantium harum! Saepe alias
+            blanditiis dicta. A corrupti eveniet non nemo quae! Et tenetur omnis quibusdam neque dolores, consequuntur
+            fuga recusandae, rerum impedit dolorum optio repudiandae maiores, maxime perspiciatis ipsum quam alias
+            possimus perferendis at tempora ea nihil repellat aspernatur. Eum corporis ducimus ut, ex perferendis
+            doloribus laboriosam officiis possimus sequi, eveniet aperiam ratione corrupti placeat provident autem
+            voluptates reprehenderit assumenda animi. Minima aliquid, atque quas, harum nam ullam ipsum temporibus modi
+            velit, quis possimus sint eius ratione!</p>
+    </div>
+    <script>
+        let text = document.getElementById('text'); 
+        let bird1 = document.getElementById('bird1'); 
+        let bird2 = document.getElementById('bird2'); 
+        let btn = document.getElementById('btn'); 
+        let rocks = document.getElementById('rocks'); 
+        let water = document.getElementById('water'); 
+        let forest = document.getElementById('forest'); 
+        let header = document.getElementById('header'); 
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px'
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = valuec * 0.5 + 'px';
+        })
+    </script>
+</body>
+
+</html>
